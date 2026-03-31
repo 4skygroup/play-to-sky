@@ -1,3 +1,38 @@
+@config "../tailwind.config.js";
+/* @import "tailwindcss/preflight"; */
+/* @import "tailwindcss/theme"; */
+/* @import "tailwindcss/components"; */
+/* @import "tailwindcss/utilities"; */
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@layer theme, base, components, utilities;
+
+@font-face {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: 700;
+  src: url(./fonts/GlacialIndifference-Bold.otf);
+}
+
+@font-face {
+  font-family: "Glacial Indifference", sans-serif;
+  font-weight: 400;
+  src: url(./fonts/GlacialIndifference-Regular.otf);
+}
+
+* {
+  font-family: "Glacial Indifference";
+  font-weight: 400;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;

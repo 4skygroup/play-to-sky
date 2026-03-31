@@ -10,6 +10,7 @@ module.exports = {
         "seofy-green": "#11676A",
         "play-to-sky-productions-gray": "#171717",
         "app-gray": "#75777C",
+        "footer-bg": "#111625",
       },
     },
   },

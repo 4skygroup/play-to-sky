@@ -3,5 +3,6 @@ export type SubsidiaryType = {
     alt: string,
     catchphrase: string,
     className: string,
-    additionnalClassName?: string
+    additionnalClassName?: string,
+    index?: string,
 }

@@ -6,6 +6,7 @@ export default function Subsidiary({
   catchphrase,
   className,
   additionnalClassName,
+  index,
 }: SubsidiaryType) {
   return (
     <section
@@ -14,6 +15,7 @@ export default function Subsidiary({
           ? className + " " + additionnalClassName
           : className
       }
+      id={index}
     >
       <div className="logo_subsection flex flex-col items-center text-2xl">
         <img src={src} alt={alt} />

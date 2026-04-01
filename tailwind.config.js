@@ -16,6 +16,10 @@ module.exports = {
         // green: "#5BE83E",
         // red: "#E53E3E",
       },
+      fontFamily: {
+        sans: ["Glacial Indifference", "sans-serif"],
+        glacial: ["Glacial Indifference", "sans-serif"],
+      },
     },
   },
   plugins: [],

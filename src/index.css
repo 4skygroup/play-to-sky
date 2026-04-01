@@ -9,24 +9,28 @@
 @layer theme, base, components, utilities;
 
 @font-face {
-  font-family: "Glacial Indifference", sans-serif;
-  font-weight: 700;
-  src: url(/fonts/GlacialIndifference-Bold.otf) format(otf);
+  font-family: "Glacial Indifference";
+  src:
+    url("/fonts/GlacialIndifference-Bold.woff2") format("woff2"),
+    url("/fonts/GlacialIndifference-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Glacial Indifference", sans-serif;
-  font-weight: 400;
-  src: url(/fonts/GlacialIndifference-Regular.otf) format(otf);
+  font-family: "Glacial Indifference";
+  src:
+    url("/fonts/GlacialIndifference-Regular.woff2") format("woff2"),
+    url("/fonts/GlacialIndifference-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 * {
   font-family: "Glacial Indifference";
-  font-weight: 400;
+  font-weight: normal;
 }
 
 html,

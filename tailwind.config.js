@@ -11,6 +11,8 @@ module.exports = {
         "play-to-sky-productions-gray": "#171717",
         "app-gray": "#75777C",
         "footer-bg": "#111625",
+        "dark-gray": "#989FAC",
+        "light-gray": "#F0F1F3",
       },
     },
   },

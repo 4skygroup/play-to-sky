@@ -1,5 +1,4 @@
 import "../App.css";
-import "../index.css";
 import LandingSection from "../components/LandingSection";
 import Subsidiary from "../components/Subsidiary";
 import type { SubsidiaryType } from "../types/subsidiary";

@@ -2,7 +2,9 @@ import type { CityType } from "../../types/city";
 
 export default function City({ cityInfo }: { cityInfo: CityType }) {
   return (
-    <div className="flex flex-col items-center justify-center border border-dark-gray border-solid w-150 px-10 py-8.75 h-fit rounded-lg gap-y-13.75">
+    <div
+      className={`flex flex-col items-center justify-center border border-dark-gray border-solid w-150 px-10 py-8.75 h-fit rounded-lg gap-y-13.75 ${!cityInfo.status && "opacity-50"}`}
+    >
       <div className="top flex justify-between w-full">
         <div className="flex flex-col">
           <h2 className="font-bold text-5xl">{cityInfo.name}</h2>
@@ -36,11 +38,15 @@ export default function City({ cityInfo }: { cityInfo: CityType }) {
       </div>
       <hr className="h-1 w-[calc(70%)]" />
       <div className="flex gap-x-7.5">
-        <div className="flex flex-col gap-y-0.75 items-center">
+        <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl">
           <span>STATUT</span>
-          <span>{cityInfo.status ? "Actif" : "Inactif"}</span>
+          <span
+            className={`flex items-center gap-x-2 before:content-[''] before:w-2 before:h-2 ${cityInfo.status ? "before:bg-green" : "before:bg-red"} before:rounded-full`}
+          >
+            {cityInfo.status ? "Actif" : "Inactif"}
+          </span>
         </div>
-        <div className="flex flex-col gap-y-0.75 items-center">
+        <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl">
           <span>DEPUIS</span>
           <span>{cityInfo.since}</span>
         </div>

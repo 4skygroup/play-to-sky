@@ -422,7 +422,7 @@ export default function OfficesByCities() {
           <h1 className="text-[4rem]">Nos bureaux</h1>
           <span className="text-xl text-dark-gray">Villes</span>
         </div>
-        <div className="flex flex-wrap gap-12.5 content-center justify-center">
+        <div className="flex flex-wrap gap-12.5 content-center justify-center max-w-312.5">
           {citiesByRegion
             .filter((r) => r.label === region)[0]
             .cities.map((city) => (

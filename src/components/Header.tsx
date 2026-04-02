@@ -30,8 +30,8 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
           <span className="">Our group</span>
         </Link>
       </div>
-      <div className="flex grow justify-between">
-        <Link to="/">
+      <div className="flex justify-end grow">
+        <Link to="/" className="absolute left-1/2 -translate-x-1/2">
           <img
             className=""
             src={
@@ -44,7 +44,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
         </Link>
         <Link to="/contact">
           <button
-            className={`contact uppercase text-2xl border border-solid ${bgColor === "black" ? "border-white" : "border-black"} px-5 py-2.5`}
+            className={`contact uppercase text-2xl border border-solid ${bgColor === "black" ? "border-white" : "border-black"} px-5 py-2.5 cursor-pointer`}
           >
             Contact
           </button>

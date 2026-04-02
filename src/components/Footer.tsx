@@ -34,7 +34,7 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="flex justify-between items-start bg-footer-bg w-full h-fit px-40 py-12.5">
+    <footer className="flex justify-between items-start bg-footer-bg w-full h-fit px-40 py-12.5 border-t-2 border-t-solid border-t-white">
       <div className="flex flex-col gap-y-10 justify-end items-center w-fit h-full my-auto">
         <img src="/images/Play To Sky Logo Blue.png" alt="Play To Sky Blue" />
         <p className="text-app-gray underline text-base w-67.5 text-center">

@@ -13,8 +13,6 @@ module.exports = {
         "footer-bg": "#111625",
         "dark-gray": "#989FAC",
         "light-gray": "#F0F1F3",
-        // green: "#5BE83E",
-        // red: "#E53E3E",
       },
       fontFamily: {
         sans: ["Glacial Indifference", "sans-serif"],

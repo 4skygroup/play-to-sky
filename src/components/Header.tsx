@@ -28,10 +28,10 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
       <div className="flex justify-end grow items-center gap-x-20">
         <Link to="/" className="absolute left-1/2 -translate-x-1/2">
           <img
-            className=""
+            className="w-55 h-15 object-cover"
             src={
               bgColor === "black"
-                ? "/images/Play To Sky Logo.png"
+                ? "/images/Play To Sky Logo Black.png"
                 : "/images/Play To Sky Logo White.png"
             }
             alt=""

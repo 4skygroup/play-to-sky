@@ -18,7 +18,7 @@ export default function Subsidiary({
       id={index}
     >
       <div className="logo_subsection flex flex-col items-center text-2xl">
-        <img src={src} alt={alt} />
+        <img src={src} alt={alt} className="w-125 aspect-square" />
         <div className="flex flex-col gap-y-10">
           <span className="block max-w-187.5 text-center break-normal">
             {catchphrase}

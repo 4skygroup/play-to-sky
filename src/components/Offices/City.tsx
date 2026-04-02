@@ -1,6 +1,18 @@
+import { useEffect, useState } from "react";
 import type { CityType } from "../../types/city";
+import { getTimeZoneHour } from "../../utils/timezone";
 
 export default function City({ cityInfo }: { cityInfo: CityType }) {
+  const [currentHour, setCurrentHour] = useState(
+    getTimeZoneHour("Europe/Paris"),
+  );
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHour(getTimeZoneHour("Europe/Paris"));
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [currentHour]);
   return (
     <div
       className={`flex flex-col items-center justify-center border border-dark-gray border-solid w-150 px-10 py-8.75 h-fit rounded-lg gap-y-13.75 ${!cityInfo.status && "opacity-50"}`}
@@ -23,7 +35,9 @@ export default function City({ cityInfo }: { cityInfo: CityType }) {
               fill="black"
             />
           </svg>
-          <span className="font-bold text-2xl">{Date.now()}</span>
+          <span className="font-bold text-2xl">
+            {getTimeZoneHour(cityInfo.timeZone)}
+          </span>
         </div>
       </div>
       <span className="min-w-87.5 max-w-fit bg-light-gray text-2xl text-center p-2.5 rounded-lg">

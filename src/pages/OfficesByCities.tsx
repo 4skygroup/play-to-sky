@@ -283,6 +283,7 @@ export default function OfficesByCities() {
       cities: [
         {
           name: "Paris",
+          timeZone: "Europe/Paris",
           country: "France",
           expression: "Hub d'Innovation",
           localAgent: { name: "Jean Dupont", number: "+33 6 12 34 56 78" },
@@ -291,6 +292,7 @@ export default function OfficesByCities() {
         },
         {
           name: "Londres",
+          timeZone: "Europe/London",
           country: "Royaume-Uni",
           expression: "Financial Tech Hub",
           localAgent: { name: "Oliver Smith", number: "+44 7700 900123" },
@@ -299,6 +301,7 @@ export default function OfficesByCities() {
         },
         {
           name: "Berlin",
+          timeZone: "Europe/Berlin",
           country: "Allemagne",
           expression: "Tech Innovations",
           localAgent: { name: "Lukas Müller", number: "+49 1512 3456789" },
@@ -307,6 +310,7 @@ export default function OfficesByCities() {
         },
         {
           name: "Amsterdam",
+          timeZone: "Europe/Amsterdam",
           country: "Pays-Bas",
           expression: "Digital Solutions",
           localAgent: { name: "Daan de Vries", number: "+31 6 12345678" },
@@ -322,6 +326,7 @@ export default function OfficesByCities() {
       cities: [
         {
           name: "Casablanca",
+          timeZone: "Africa/Casablanca",
           country: "Maroc",
           expression: "Business Gateway",
           localAgent: {
@@ -333,6 +338,7 @@ export default function OfficesByCities() {
         },
         {
           name: "Le Cap",
+          timeZone: "Africa/Johannesburg",
           country: "Afrique du Sud",
           expression: "Creative Economy",
           localAgent: { name: "Thabo Nkosi", number: "+27 71 234 5678" },
@@ -341,6 +347,7 @@ export default function OfficesByCities() {
         },
         {
           name: "Lagos",
+          timeZone: "Africa/Lagos",
           country: "Nigeria",
           expression: "Startup Ecosystem",
           localAgent: { name: "Chinedu Okafor", number: "+234 803 123 4567" },
@@ -356,6 +363,7 @@ export default function OfficesByCities() {
       cities: [
         {
           name: "New York",
+          timeZone: "America/New_York",
           country: "États-Unis d'Amérique",
           expression: "Global Finance Hub",
           localAgent: { name: "Michael Johnson", number: "+1 212 555 7890" },
@@ -364,6 +372,7 @@ export default function OfficesByCities() {
         },
         {
           name: "Toronto",
+          timeZone: "America/Toronto",
           country: "Canada",
           expression: "Innovation Center",
           localAgent: { name: "Sophie Tremblay", number: "+1 416 555 1234" },
@@ -372,6 +381,7 @@ export default function OfficesByCities() {
         },
         {
           name: "São Paulo",
+          timeZone: "America/Sao_Paulo",
           country: "Brésil",
           expression: "Economic Powerhouse",
           localAgent: { name: "Carlos Silva", number: "+55 11 91234 5678" },
@@ -380,6 +390,7 @@ export default function OfficesByCities() {
         },
         {
           name: "Mexico",
+          timeZone: "America/Mexico_City",
           country: "Mexique",
           expression: "Industrial Growth",
           localAgent: { name: "Luis Hernández", number: "+52 55 1234 5678" },
@@ -395,6 +406,7 @@ export default function OfficesByCities() {
       cities: [
         {
           name: "Dubaï",
+          timeZone: "Asia/Dubai",
           country: "Émirats Arabes Unis",
           expression: "Luxury & Innovation",
           localAgent: { name: "Omar Al Mansoori", number: "+971 50 123 4567" },
@@ -403,6 +415,7 @@ export default function OfficesByCities() {
         },
         {
           name: "Doha",
+          timeZone: "Asia/Qatar",
           country: "Qatar",
           expression: "Strategic Growth",
           localAgent: { name: "Khalid Al Thani", number: "+974 3312 3456" },

@@ -8,4 +8,5 @@ export type CityType = {
     };
     status: boolean;
     since: number;
+    timeZone: string;
 };

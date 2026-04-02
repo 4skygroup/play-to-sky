@@ -51,6 +51,7 @@ function Home() {
       catchphrase: "Creative Energy Agency - Innovative",
       className: subsidiariesClassName,
       additionnalClassName: "bg-black text-white",
+      index: "drox360",
     },
     {
       src: "/images/Sky To Be Media.png",

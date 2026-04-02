@@ -12,8 +12,8 @@ export default function Subsidiary({
     <section
       className={
         additionnalClassName
-          ? className + " " + additionnalClassName + " group"
-          : className + " group"
+          ? `${className} ${additionnalClassName} group ${index === "drox360" && "border-b-white border-b-2 border-b-solid"}`
+          : `${className} group ${index === "drox360" && "border-b-white border-b-2 border-b-solid"}`
       }
       id={index}
     >
@@ -24,7 +24,9 @@ export default function Subsidiary({
             {catchphrase}
           </span>
           <div className="button flex flex-col items-center overflow-hidden">
-            <button className="border border-solid border-white font-bold text-base rounded-sm uppercase p-2.5 w-fit translate-y-full group-hover:translate-y-0 transition-transform duration-300 cursor-pointer">
+            <button
+              className={`border border-solid font-bold text-base rounded-sm uppercase px-2 py-1.5 w-fit translate-y-full group-hover:translate-y-0 transition-transform duration-300 cursor-pointer ${index === "visuance" ? "border-black" : "border-white"}`}
+            >
               En savoir plus
             </button>
           </div>

@@ -22,7 +22,7 @@ export default function Region({ name, expression, link, cities }: RegionType) {
             key={index}
             className={
               index === cities.length - 1
-                ? ""
+                ? "font-bold"
                 : "flex items-center gap-x-3 font-bold after:content-[''] after:w-1 after:h-1 after:bg-dark-gray after:rounded-full"
             }
           >

@@ -52,16 +52,16 @@ export default function City({ cityInfo }: { cityInfo: CityType }) {
       </div>
       <hr className="h-1 w-[calc(70%)]" />
       <div className="flex gap-x-7.5">
-        <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl">
-          <span>STATUT</span>
+        <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl ">
+          <span className="text-dark-gray">STATUT</span>
           <span
-            className={`flex items-center gap-x-2 before:content-[''] before:w-2 before:h-2 ${cityInfo.status ? "before:bg-green" : "before:bg-red"} before:rounded-full`}
+            className={`flex items-center gap-x-2 before:content-[''] before:w-2 before:h-2 ${cityInfo.status ? "before:bg-green-500" : "before:bg-red-500"} before:rounded-full`}
           >
             {cityInfo.status ? "Actif" : "Inactif"}
           </span>
         </div>
-        <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl">
-          <span>DEPUIS</span>
+        <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl ">
+          <span className="text-dark-gray">DEPUIS</span>
           <span>{cityInfo.since}</span>
         </div>
       </div>

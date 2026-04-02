@@ -11,11 +11,11 @@ export default function Contact() {
         <h1 className="text-5xl">Contact Us</h1>
         <div className="flex justify-between w-full">
           <a
-            href="mailto:contact@playtosky.fr"
+            href="mailto:contact@playtosky.com"
             className="flex flex-col gap-y-3.75 border-2 border-black border-solid items-center py-3.75 px-6.25 text-2xl cursor-pointer hover:text-white hover:bg-black"
           >
             <span className="font-bold uppercase">Email</span>
-            <span>contact@playtosky.fr</span>
+            <span>contact@playtosky.com</span>
           </a>
           <a
             href="tel:+33123456789"

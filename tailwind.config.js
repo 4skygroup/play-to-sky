@@ -18,6 +18,9 @@ module.exports = {
         sans: ["Glacial Indifference", "sans-serif"],
         glacial: ["Glacial Indifference", "sans-serif"],
       },
+      screens: {
+        xs: "40rem",
+      },
     },
   },
   plugins: [],

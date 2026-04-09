@@ -34,13 +34,13 @@ export default function Footer() {
     },
   ];
   return (
-    <footer className="flex justify-between items-start bg-footer-bg w-full h-fit px-40 py-12.5 border-t-2 border-t-solid border-t-white">
+    <footer className="max-md:flex-col max-md:items-center max-md:gap-y-15 flex justify-between items-start bg-footer-bg w-full h-fit max-lg:px-10 lg:max-xl:px-15 px-40 py-12.5 border-t-2 border-t-solid border-t-white">
       <div className="flex flex-col gap-y-10 justify-end items-center w-fit h-full my-auto">
         <img src="/images/Play To Sky Logo Blue.png" alt="Play To Sky Blue" />
-        <p className="text-app-gray underline text-base w-67.5 text-center">
+        <p className="text-app-gray underline text-base max-lg:w-40 w-67.5 text-center">
           Follow our journey and connect with our community
         </p>
-        <div className="medias flex gap-x-7.5">
+        <div className="medias flex md:max-lg:gap-x-4 gap-x-7.5">
           <a href="https://www.linkedin.com/company/play-to-sky/">
             <svg
               width="35"
@@ -150,9 +150,9 @@ export default function Footer() {
         </div>
       </div>
       {sections.map((section, index) => (
-        <div key={index} className="flex flex-col gap-y-5">
+        <div key={index} className="flex flex-col gap-y-5 max-md:items-center">
           <h3 className="text-white text-2xl">{section.title}</h3>
-          <ul className="flex flex-col gap-y-2.5">
+          <ul className="flex flex-col gap-y-2.5 max-md:items-center">
             {section.links.map((link, linkIndex) => (
               <li key={linkIndex}>
                 <a href="#" className="text-app-gray hover:text-white">

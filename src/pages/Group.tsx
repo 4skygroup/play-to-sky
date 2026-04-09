@@ -6,9 +6,9 @@ export default function Group() {
     <div>
       <Header bgColor="white" />
       <div className="flex justify-center items-center my-31.25">
-        <div className="flex flex-col gap-y-12.5">
+        <div className="max-lg:px-15 flex flex-col gap-y-12.5">
           <h1 className="text-[4rem]">Our Story</h1>
-          <p className="flex flex-col text-2xl max-w-200 break-normal gap-y-5">
+          <p className=" flex flex-col text-2xl max-w-200 break-normal gap-y-5">
             <span>
               Play To Sky is a multinational group founded in 2025 by Mr
               Robbin-James AGOH, a visionary in next-generation marketing.

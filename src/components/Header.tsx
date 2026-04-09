@@ -5,7 +5,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
     <header
       className={`relative flex lg:justify-items-start justify-between ${bgColor === "black" ? "text-white" : "text-black"} ${bgColor === "black" ? "bg-black" : "bg-white"} py-7.5 max-xs:px-4 xs:max-lg:px-10 px-24 border-b-2 border-b-solid ${bgColor === "black" ? "border-white" : "border-black"} w-full h-30 items-center`}
     >
-      <div className="flex items-center gap-x-5 xs:max-lg:gap-x-10 lg:gap-x-20 text-lg">
+      <div className="flex items-center max-xs:gap-x-5 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20 text-lg">
         <Link to="">
           <span className="">FR</span>
         </Link>
@@ -31,7 +31,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
         className="max-lg:static lg:absolute lg:left-1/2 lg:-translate-x-1/2"
       >
         <img
-          className="max-xs:w-30 static w-55 xs:min-w-55 h-15 object-cover"
+          className={`max-xs:w-30 static w-55 xs:min-w-55 h-15 ${bgColor === "black" ? "object-cover" : "max-xs:h-8"}`}
           src={
             bgColor === "black"
               ? "/images/Play To Sky Logo Black.png"
@@ -40,7 +40,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
           alt=""
         />
       </Link>
-      <div className="flex justify-end lg:grow items-center gap-x-5 xs:max-lg:gap-x-10 lg:gap-x-20">
+      <div className="flex justify-end lg:grow items-center max-xs:gap-x-5 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20">
         {/* <Link to="/">
           <span className="">Home</span>
         </Link> */}

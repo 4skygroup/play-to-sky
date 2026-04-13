@@ -3,7 +3,7 @@ import type { RegionType } from "../../types/region";
 
 export default function Region({ name, expression, link, cities }: RegionType) {
   return (
-    <div className="flex gap-y-15 flex-col items-center w-125 py-10 px-12.5 border border-dark-gray border-solid rounded-sm">
+    <div className="flex gap-y-15 flex-col items-center max-xs:w-75 xs:w-125 py-10 px-12.5 border border-dark-gray border-solid rounded-sm">
       <div className="flex justify-between w-full">
         <div>
           <h2 className="uppercase text-4xl font-bold">{name}</h2>

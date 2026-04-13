@@ -431,7 +431,7 @@ export default function OfficesByCities() {
     <div>
       <Header bgColor="white" />
       <div className="flex flex-col items-center py-25 gap-y-25">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center  max-xs:text-center max-xs:px-10">
           <h1 className="text-[4rem]">Nos bureaux</h1>
           <span className="text-xl text-dark-gray">Villes</span>
         </div>

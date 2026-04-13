@@ -15,7 +15,7 @@ export default function City({ cityInfo }: { cityInfo: CityType }) {
   }, [currentHour]);
   return (
     <div
-      className={`flex flex-col items-center justify-center border border-dark-gray border-solid w-150 px-10 py-8.75 h-fit rounded-lg gap-y-13.75 ${!cityInfo.status && "opacity-50"}`}
+      className={`flex flex-col items-center justify-center border border-dark-gray border-solid max-xs:w-100 w-150 px-10 py-8.75 h-fit rounded-lg gap-y-13.75 ${!cityInfo.status && "opacity-50"}`}
     >
       <div className="top flex justify-between w-full">
         <div className="flex flex-col">

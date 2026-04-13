@@ -34,13 +34,13 @@ export default function OfficesByRegion() {
     <div className="">
       <Header bgColor="white" />
       <div className="flex flex-col items-center py-25 gap-y-25">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center max-xs:text-center max-xs:px-10">
           <h1 className="text-[4rem]">Nos bureaux</h1>
           <span className="text-xl text-dark-gray">
             Continents et Zones géographiques
           </span>
         </div>
-        <div className="flex flex-wrap max-w-262.5 gap-12.5 content-center">
+        <div className="flex flex-wrap max-w-262.5 gap-12.5 content-center justify-center">
           {regions.map((region, index) => (
             <Region
               key={index}

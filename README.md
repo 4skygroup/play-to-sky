@@ -1,74 +1,115 @@
-# React + TypeScript + Vite
+# 🚀 Play To Sky -- Frontend Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Présentation du projet
 
-Currently, two official plugins are available:
+**Play To Sky**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🛠️ Stack technique
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Vite
+- React
+- TypeScript
+- TailwindCSS
+- React Router
+- ESLint
+- PostCSS
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Structure du projet
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+    play-to-sky-main/
+    │
+    ├── public/
+    │   ├── fonts/
+    │   └── images/
+    │
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   ├── types/
+    │   ├── utils/
+    │   ├── App.tsx
+    │   ├── main.tsx
+    │
+    ├── index.html
+    ├── package.json
+    ├── vite.config.ts
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🧠 Architecture globale
+
+### 🔹 Entry point
+
+- `main.tsx` initialise React
+- `App.tsx` contient la structure globale et le routing
+
+---
+
+### 🔹 Routing (React Router)
+
+Le projet utilise **React Router** pour la navigation entre les pages.
+
+Les routes principales sont définies dans `App.tsx` :
+
+- `/` → Home
+- `/group` → Group
+- `/contact` → Contact
+- `/offices/cities` → Offices par ville
+- `/offices/regions` → Offices par région
+
+👉 Le routing permet : - navigation fluide sans rechargement -
+organisation claire des pages - extensibilité du projet
+
+---
+
+### 🔹 Pages
+
+- Home
+- Group
+- Contact
+- OfficesByCities
+- OfficesByRegion
+
+---
+
+### 🔹 Composants
+
+- Header / Footer
+- LandingSection
+- Subsidiary
+- Offices (City, Region)
+- Inputs (input, textarea)
+
+---
+
+### 🔹 Utilitaires
+
+- gestion des fuseaux horaires
+
+---
+
+## ⚙️ Installation
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📈 Améliorations possibles
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# play-to-sky
+- API backend
+- state management
+- tests
+- SEO
+
+---
+
+## 👨‍💻 Auteur
+
+Projet frontend moderne.

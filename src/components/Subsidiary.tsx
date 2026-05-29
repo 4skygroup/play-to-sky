@@ -1,4 +1,5 @@
 import type { SubsidiaryType } from "../types/subsidiary";
+import { useTranslations } from "../utils/useTranslations";
 
 export default function Subsidiary({
   src,
@@ -6,8 +7,11 @@ export default function Subsidiary({
   catchphrase,
   className,
   additionnalClassName,
+  link,
   index,
 }: SubsidiaryType) {
+  const t = useTranslations();
+
   return (
     <section
       className={
@@ -24,11 +28,13 @@ export default function Subsidiary({
             {catchphrase}
           </span>
           <div className="button flex flex-col items-center overflow-hidden">
-            <button
-              className={`border border-solid font-bold text-base rounded-sm uppercase px-2 py-1.5 w-fit translate-y-full group-hover:translate-y-0 transition-transform duration-300 cursor-pointer ${index === "visuance" ? "border-black" : "border-white"}`}
-            >
-              En savoir plus
-            </button>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              <button
+                className={`border border-solid font-bold text-base rounded-sm uppercase px-2 py-1.5 w-fit translate-y-full group-hover:translate-y-0 transition-transform duration-300 cursor-pointer ${index === "visuance" ? "border-black" : "border-white"}`}
+              >
+                {t.buttons.learnMore}
+              </button>
+            </a>
           </div>
         </div>
       </div>

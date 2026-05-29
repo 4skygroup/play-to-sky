@@ -1,16 +1,19 @@
 import Header from "./Header";
+import { useTranslations } from "../utils/useTranslations";
 
 export default function LandingSection() {
+  const t = useTranslations();
+
   return (
     <section className="landing-section flex flex-col items-center text-center text-white bg-black w-screen h-screen">
       <Header bgColor="black" />
       <div className="flex justify-center items-center w-full h-[calc(100%-120px)]">
         <div className="flex flex-col justify-center items-center gap-y-13.75">
           <p className="text-5xl">
-            Scaling Brands, One Group, Infinite Growth.
+            {t.landing.title}
           </p>
           <div className="flex flex-col justify-center items-center gap-y-5 text-2xl text-app-gray">
-            <span>Découvrez nos agences</span>
+            <span>{t.landing.discover}</span>
             <a href="#visuance">
               <svg
                 width="20"

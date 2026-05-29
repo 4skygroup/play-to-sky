@@ -61,7 +61,7 @@ export default function City({ cityInfo }: { cityInfo: CityType }) {
           </span>
         </div>
         <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl ">
-          <span className="text-dark-gray">DEPUIS</span>
+          <span className="text-dark-gray">Since</span>
           <span>{cityInfo.since}</span>
         </div>
       </div>

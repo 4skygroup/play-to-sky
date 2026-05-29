@@ -1,14 +1,16 @@
 import { Link } from "react-router";
+import LanguageSelector from "./LanguageSelector";
+import { useTranslations } from "../utils/useTranslations";
 
 export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
+  const t = useTranslations();
+
   return (
     <header
       className={`relative flex lg:justify-items-start justify-between ${bgColor === "black" ? "text-white" : "text-black"} ${bgColor === "black" ? "bg-black" : "bg-white"} py-7.5 max-xs:px-4 xs:max-lg:px-10 px-24 border-b-2 border-b-solid ${bgColor === "black" ? "border-white" : "border-black"} w-full h-30 items-center`}
     >
       <div className="flex items-center max-xs:gap-x-5 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20 text-lg">
-        <Link to="">
-          <span className="">FR</span>
-        </Link>
+        <LanguageSelector bgColor={bgColor} />
         <Link to="/offices-by-region">
           <svg
             className="max-md:flex hidden"
@@ -23,7 +25,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
               fill={`${bgColor === "black" ? "white" : "black"}`}
             />
           </svg>
-          <span className="max-md:hidden flex">Nos localisations</span>
+          <span className="max-md:hidden flex">{t.header.ourLocations}</span>
         </Link>
       </div>
       <Link
@@ -79,7 +81,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
               fill={`${bgColor === "black" ? "white" : "black"}`}
             />
           </svg>
-          <span className="max-md:hidden block">Our group</span>
+          <span className="max-md:hidden block">{t.header.aboutUs}</span>
         </Link>
         <Link to="/contact">
           <svg
@@ -98,7 +100,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
           <button
             className={`contact uppercase max-md:hidden block text-xl border border-solid ${bgColor === "black" ? "border-white" : "border-black"} px-5 py-2.5 cursor-pointer`}
           >
-            Contact
+            {t.header.contact}
           </button>
         </Link>
       </div>

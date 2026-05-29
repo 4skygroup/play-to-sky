@@ -7,8 +7,7 @@
 @font-face {
   font-family: "Glacial Indifference";
   src:
-    url("/fonts/GlacialIndifference-Bold.woff2") format("woff2"),
-    url("/fonts/GlacialIndifference-Bold.woff") format("woff");
+    url("/fonts/GlacialIndifference-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -17,8 +16,7 @@
 @font-face {
   font-family: "Glacial Indifference";
   src:
-    url("/fonts/GlacialIndifference-Regular.woff2") format("woff2"),
-    url("/fonts/GlacialIndifference-Regular.woff") format("woff");
+    url("/fonts/GlacialIndifference-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -31,4 +29,24 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;}
+
+/* Scrollbar styling */
+html::-webkit-scrollbar {
+  width: 12px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 2px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: #000;
 }

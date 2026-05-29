@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         "pulse-x-agency-pink": "#EF5A98",
-        "snackly-orange": "#FC641C",
+        "snackly-purple": "#7209B7",
         "seofy-green": "#11676A",
         "play-to-sky-productions-gray": "#171717",
         "app-gray": "#75777C",

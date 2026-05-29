@@ -4,5 +4,6 @@ export type SubsidiaryType = {
     catchphrase: string,
     className: string,
     additionnalClassName?: string,
+    link?: string,
     index?: string,
 }

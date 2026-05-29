@@ -1,31 +1,34 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Region from "../components/Offices/Region";
+import { useTranslations } from "../utils/useTranslations";
 
 export default function OfficesByRegion() {
+  const t = useTranslations();
+
   const regions = [
     {
-      name: "Europe",
+      name: t.officesPage.europe,
       cities: ["Paris", "Londres", "Berlin", "Amsterdam"],
-      expression: "Innovation & Excellence",
+      expression: t.officesPage.innovationExcellence,
       link: "/offices-by-cities/europe",
     },
     {
-      name: "Afrique",
+      name: t.officesPage.africa,
       cities: ["Casablanca", "Le Cap", "Lagos"],
-      expression: "Creativity & Vision",
+      expression: t.officesPage.creativityVision,
       link: "/offices-by-cities/africa",
     },
     {
-      name: "Amérique (Nord)",
+      name: t.officesPage.northAmerica,
       cities: ["New York", "Toronto", "São Paulo", "Mexico"],
-      expression: "Technology & Innovation",
+      expression: t.officesPage.technologyInnovation,
       link: "/offices-by-cities/north-america",
     },
     {
-      name: "Moyen-Orient",
+      name: t.officesPage.middleEast,
       cities: ["Dubaï", "Doha"],
-      expression: "Future & Growth",
+      expression: t.officesPage.futureGrowth,
       link: "/offices-by-cities/middle-east",
     },
   ];
@@ -35,9 +38,9 @@ export default function OfficesByRegion() {
       <Header bgColor="white" />
       <div className="flex flex-col items-center py-25 gap-y-25">
         <div className="flex flex-col items-center max-xs:text-center max-xs:px-10">
-          <h1 className="text-[4rem]">Nos bureaux</h1>
+          <h1 className="text-[4rem]">{t.officesPage.ourOffices}</h1>
           <span className="text-xl text-dark-gray">
-            Continents et Zones géographiques
+            {t.officesPage.continents}
           </span>
         </div>
         <div className="flex flex-wrap max-w-262.5 gap-12.5 content-center justify-center">

@@ -1,7 +1,11 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+// import { useTranslations } from "../utils/useTranslations";
+
 
 export default function Group() {
+  // const t = useTranslations();
+
   return (
     <div>
       <Header bgColor="white" />

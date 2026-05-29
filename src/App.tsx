@@ -5,6 +5,7 @@ import OfficesByRegion from "./pages/OfficesByRegion";
 import OfficesByCities from "./pages/OfficesByCities";
 import Contact from "./pages/Contact";
 import Group from "./pages/Group";
+import { LanguageProvider } from "./components/LanguageContext";
 
 const router = createBrowserRouter([
   {
@@ -36,5 +37,9 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <LanguageProvider>
+      <RouterProvider router={router} />
+    </LanguageProvider>
+  );
 }

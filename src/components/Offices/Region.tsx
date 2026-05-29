@@ -10,7 +10,7 @@ export default function Region({ name, expression, link, cities }: RegionType) {
           <span>{expression}</span>
         </div>
         <div className="flex flex-col items-center gap-y-1">
-          <span className="text-base">Bureaux</span>
+          <span className="text-base">Offices</span>
           <span className="font-bold rounded-sm text-xl bg-light-gray w-fit h-fit py-2 px-4">
             {cities.length}
           </span>
@@ -31,7 +31,7 @@ export default function Region({ name, expression, link, cities }: RegionType) {
         ))}
       </div>
       <Link to={link} className="text-dark-gray">
-        Voir les bureaux &gt;
+        View offices &gt;
       </Link>
     </div>
   );

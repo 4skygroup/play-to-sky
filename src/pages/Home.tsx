@@ -3,76 +3,86 @@ import LandingSection from "../components/LandingSection";
 import Subsidiary from "../components/Subsidiary";
 import type { SubsidiaryType } from "../types/subsidiary";
 import Footer from "../components/Footer";
+import { useTranslations } from "../utils/useTranslations";
 
 function Home() {
+  const t = useTranslations();
   const subsidiariesClassName: string =
-    "flex w-full justify-center bg-red p-28.75 h-fit";
+    "flex w-full justify-center p-28.75 h-screen items-center";
   const subsidiaries: SubsidiaryType[] = [
     {
       src: "/images/Visuance.png",
       alt: "Visuance Image",
-      catchphrase: "Brand Design and Identity",
+      catchphrase: t.subsidiaries.visuance,
       className: subsidiariesClassName,
       additionnalClassName: "text-black",
+      link: "https://www.visuanceagency.com/",
       index: "visuance",
     },
     {
       src: "/images/Pulse X.png",
       alt: "Pulse X Image",
-      catchphrase: "Social Agency - Media and Community Management",
+      catchphrase: t.subsidiaries.pulseX,
       className: subsidiariesClassName,
       additionnalClassName: "bg-black text-white",
+      link: "https://www.pulsex.com/",
     },
     {
       src: "/images/Pulse X Agency.png",
       alt: "Pulse X Agency Image",
-      catchphrase: "Influence Agency and Content Creator",
+      catchphrase: t.subsidiaries.pulseXAgency,
       className: subsidiariesClassName,
       additionnalClassName: "bg-pulse-x-agency-pink text-white",
+      link: "https://www.pulsexmanagement.com/",
     },
     {
       src: "/images/Snackly.png",
       alt: "Snackly Image",
-      catchphrase: "Snack Content Agency",
+      catchphrase: t.subsidiaries.snackly,
       className: subsidiariesClassName,
-      additionnalClassName: "bg-snackly-orange text-white",
+      additionnalClassName: "bg-snackly-purple text-white",
+      link: "https://www.snacklyagency.com/",
     },
     {
       src: "/images/Seofy.png",
       alt: "Seofy Image",
-      catchphrase:
-        " Search Engines (SEO) Agency of AI and Media Buying SEA,\nSocial Ads and Programmatic",
+      catchphrase: t.subsidiaries.seofy,
       className: subsidiariesClassName,
-      additionnalClassName: "bg-seofy-green text-white",
+      additionnalClassName: "bg-seofy-green text-white", 
+      link: "https://www.seofyagency.com/",
     },
     {
       src: "/images/Drox 360.png",
       alt: "Drox 360 Image",
-      catchphrase: "Creative Energy Agency - Innovative",
+      catchphrase: t.subsidiaries.drox360,
       className: subsidiariesClassName,
       additionnalClassName: "bg-black text-white",
       index: "drox360",
+      link: "https://www.drox360.com/",
     },
     {
       src: "/images/Sky To Be Media.png",
       alt: "Sky To Be Media Image",
-      catchphrase: "Media Production Society",
+      catchphrase: t.subsidiaries.skyToBeMedia,
       className: subsidiariesClassName,
       additionnalClassName: "bg-black text-white",
+      link: "https://www.skytobemedia.com/",
     },
     {
       src: "/images/Play To Sky Productions.png",
       alt: "Play To Sky Productions Image",
-      catchphrase: "Movies Production Society",
+      catchphrase: t.subsidiaries.playToSkyProductions,
       className: subsidiariesClassName,
       additionnalClassName: "bg-play-to-sky-productions-gray text-white",
+      link: "https://www.playtoskyproductions.com/",
     },
     {
       src: "/images/CYBERSKY.png",
       alt: "CYBERSKY Image",
-      catchphrase: "IT Solutions and solutions for corporations",
+      catchphrase: t.subsidiaries.cybersky,
       className: subsidiariesClassName,
       additionnalClassName: "bg-black text-white",
+      link: "https://www.cyberskyagency.com/",
     },
   ];
   return (
@@ -87,6 +97,7 @@ function Home() {
           className={s.className}
           key={index}
           additionnalClassName={s.additionnalClassName}
+          link={s.link}
         />
       ))}
       <Footer />

@@ -3,7 +3,7 @@ import { RouterProvider } from "react-router/dom";
 import Home from "./pages/Home";
 import OfficesByRegion from "./pages/OfficesByRegion";
 import OfficesByCities from "./pages/OfficesByCities";
-import Contact from "./pages/Contact";
+import Contact from "./pages/Contact2";
 import Group from "./pages/Group";
 import { LanguageProvider } from "./components/LanguageContext";
 

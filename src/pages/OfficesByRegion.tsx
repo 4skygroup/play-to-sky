@@ -34,16 +34,24 @@ export default function OfficesByRegion() {
   ];
 
   return (
-    <div className="">
+    <div className="w-full">
       <Header bgColor="white" />
-      <div className="flex flex-col items-center py-25 gap-y-25">
-        <div className="flex flex-col items-center max-xs:text-center max-xs:px-10">
-          <h1 className="text-[4rem]">{t.officesPage.ourOffices}</h1>
-          <span className="text-xl text-dark-gray">
+
+      {/* Conteneur principal : paddings et gaps réduits sur mobile */}
+      <div className="flex flex-col items-center py-12 md:py-25 gap-y-10 md:gap-y-25 px-4 md:px-0">
+
+        {/* En-tête de la page */}
+        <div className="flex flex-col items-center text-center px-4 md:px-10">
+          <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold mb-2 md:mb-4">
+            {t.officesPage.ourOffices}
+          </h1>
+          <span className="text-lg md:text-xl text-dark-gray">
             {t.officesPage.continents}
           </span>
         </div>
-        <div className="flex flex-wrap max-w-262.5 gap-12.5 content-center justify-center">
+
+        {/* Liste des régions : adaptation du gap et de la largeur max */}
+        <div className="flex flex-wrap max-w-full lg:max-w-262.5 gap-6 md:gap-12.5 content-center justify-center">
           {regions.map((region, index) => (
             <Region
               key={index}
@@ -54,7 +62,9 @@ export default function OfficesByRegion() {
             />
           ))}
         </div>
+
       </div>
+
       <Footer />
     </div>
   );

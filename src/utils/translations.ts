@@ -14,7 +14,8 @@ export const translations = {
       pulseX: "Social Agency - Media and Community Management",
       pulseXAgency: "Influence Agency and Content Creator",
       snackly: "Snack Content Agency",
-      seofy: "Search Engines (SEO) Agency of AI and Media Buying SEA, Social Ads and Programmatic",
+      seofy:
+        "Search Engines (SEO) Agency of AI and Media Buying SEA, Social Ads and Programmatic",
       drox360: "Creative Energy Agency - Innovative",
       skyToBeMedia: "Media Production Society",
       playToSkyProductions: "Movies Production Society",
@@ -49,13 +50,16 @@ export const translations = {
       creativityVision: "Creativity & Vision",
       technologyInnovation: "Technology & Innovation",
       futureGrowth: "Future & Growth",
+      viewOffices: "View offices",
+      offices: "Offices",
     },
     contactPage: {
       contactUs: "Contact Us",
       email: "Email",
       phone: "Phone",
       location: "Location",
-      shareVision: "Share with us your vision. Together we'll make it come true",
+      shareVision:
+        "Share with us your vision. Together we'll make it come true",
       name: "Name",
       yourName: "Your name",
       yourEmail: "my@email.com",
@@ -64,6 +68,20 @@ export const translations = {
       yourMessage: "Your message",
       tellMore: "Tell us more about what your project is about...",
       send: "Send",
+    },
+    cityPage: {
+      title:"Our Offices"
+    }
+    aboutUsPage: {
+      title: "Our Story",
+      text1:
+        "Play To Sky is a multinational group founded in 2025 by Mr Robbin-James AGOH, a visionary in next-generation marketing. Focused on 360° marketing, the group supports brands, talents, and companies in developing their image, visibility, and international expansion.",
+      text2:
+        "Led by Mr Robbin-James AGOH alongside Thierno DIALLO, Play To Sky positions itself as a strategic player capable of blending creativity, innovation, and performance to address modern communication challenges.",
+      text3:
+        "Since its creation, the group has developed several strong entities such as Visuance, Pulse X, Pulse X Agency, Sky To Be Media, and other fast-growing structures, forming a global ecosystem dedicated to influence, media, production, and brand strategy.",
+      text4:
+        "Beyond tools and technology, Play To Sky places creativity at the heart of its vision—because true transformative power lies in the ability to imagine, create, and inspire.",
     },
   },
   FR: {
@@ -81,7 +99,8 @@ export const translations = {
       pulseX: "Agence Sociale - Gestion des médias et communauté",
       pulseXAgency: "Agence d'influence et créateur de contenu",
       snackly: "Agence de contenu snack",
-      seofy: "Agence de moteurs de recherche (SEO) IA et achat de médias SEA, annonces sociales et programmatique",
+      seofy:
+        "Agence de moteurs de recherche (SEO) IA et achat de médias SEA, annonces sociales et programmatique",
       drox360: "Agence d'énergie créative - Innovante",
       skyToBeMedia: "Société de production médias",
       playToSkyProductions: "Société de production de films",
@@ -103,7 +122,8 @@ export const translations = {
       privacyPolicy: "Politique de confidentialité",
       termsAndConditions: "Conditions générales de vente",
       generalTermsOfUse: "Conditions générales d'utilisation",
-      followJourney: "Suivez notre parcours et connectez-vous avec notre communauté",
+      followJourney:
+        "Suivez notre parcours et connectez-vous avec notre communauté",
     },
     officesPage: {
       ourOffices: "Nos bureaux",
@@ -116,14 +136,16 @@ export const translations = {
       creativityVision: "Créativité & Vision",
       technologyInnovation: "Technologie & Innovation",
       futureGrowth: "Avenir & Croissance",
-
+      viewOffices: "Voir nos bureaux",
+      offices: "Bureaux",
     },
     contactPage: {
       contactUs: "Nous contacter",
       email: "Email",
       phone: "Téléphone",
       location: "Localisation",
-      shareVision: "Partagez avec nous votre vision. Ensemble, nous la rendrons réalité",
+      shareVision:
+        "Partagez avec nous votre vision. Ensemble, nous la rendrons réalité",
       name: "Nom",
       yourName: "Votre nom",
       yourEmail: "mon@email.com",
@@ -132,6 +154,17 @@ export const translations = {
       yourMessage: "Votre message",
       tellMore: "Dites-nous en plus sur votre projet...",
       send: "Envoyer",
+    },
+    aboutUsPage: {
+      title: "Notre Histoire",
+      text1:
+        "Play To Sky est un groupe multinational fondé en 2025 par M. Robbin-James AGOH, un visionnaire du marketing de nouvelle génération. Spécialisé dans le marketing à 360°, le groupe aide les marques, les talents et les entreprises à développer leur image, leur visibilité et leur expansion internationale.",
+      text2:
+        "Dirigée par M. Robbin-James AGOH aux côtés de Thierno DIALLO, Play To Sky se positionne comme un acteur stratégique capable d'allier créativité, innovation et performance pour relever les défis de la communication moderne.",
+      text3:
+        "Depuis sa création, le groupe a développé plusieurs entités solides telles que Visuance, Pulse X, Pulse X Agency, Sky To Be Media et d'autres structures en pleine expansion, formant ainsi un écosystème mondial dédié à l'influence, aux médias, à la production et à la stratégie de marque.",
+      text4:
+        "Au-delà des outils et de la technologie, Play To Sky place la créativité au cœur de sa vision, car le véritable pouvoir de transformation réside dans la capacité à imaginer, à créer et à inspirer.",
     },
   },
 };

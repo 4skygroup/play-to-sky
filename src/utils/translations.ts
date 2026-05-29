@@ -70,8 +70,15 @@ export const translations = {
       send: "Send",
     },
     cityPage: {
-      title:"Our Offices"
-    }
+      title:"Our Offices",
+      place: "Places",
+      hub: "Hub d'innovation",
+      agent: "Local Agent",
+      status: "Status",
+      statusOff: "Active",
+      statusOn: "Inactive",
+      since: "Since",
+    },
     aboutUsPage: {
       title: "Our Story",
       text1:

@@ -5,16 +5,24 @@ export default function LandingSection() {
   const t = useTranslations();
 
   return (
-    <section className="landing-section flex flex-col items-center text-center text-white bg-black w-screen h-screen">
+    <section className="landing-section flex flex-col items-center text-center text-white bg-black w-full min-h-screen">
       <Header bgColor="black" />
-      <div className="flex justify-center items-center w-full h-[calc(100%-120px)]">
-        <div className="flex flex-col justify-center items-center gap-y-13.75">
-          <p className="text-5xl">
+
+      {/* Remplacement de h-screen par min-h-screen et ajustement des paddings latéraux */}
+      <div className="flex justify-center items-center w-full h-[calc(100vh-120px)] px-4 sm:px-8">
+        <div className="flex flex-col justify-center items-center gap-y-10 md:gap-y-13.75 w-full max-w-5xl">
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
             {t.landing.title}
-          </p>
-          <div className="flex flex-col justify-center items-center gap-y-5 text-2xl text-app-gray">
+          </h1>
+
+          <button className=" border border-white font-bold text-lg rounded-sm uppercase px-8 py-3 w-fit hover:bg-gray-600 hover:scale-105 transition-all duration-300 cursor-pointer shadow-lg">
+            {t.buttons.learnMore}
+          </button>
+
+          <div className="flex flex-col justify-center items-center gap-y-5 text-lg md:text-2xl text-app-gray mt-4 md:mt-0">
             <span>{t.landing.discover}</span>
-            <a href="#visuance">
+            <a href="#visuance" className="cursor-pointer hover:opacity-70 transition-opacity">
               <svg
                 width="20"
                 height="12"

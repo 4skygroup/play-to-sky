@@ -10,9 +10,9 @@ export default function LandingSection() {
 
       {/* Remplacement de h-screen par min-h-screen et ajustement des paddings latéraux */}
       <div className="flex justify-center items-center w-full h-[calc(100vh-120px)] px-4 sm:px-8">
-        <div className="flex flex-col justify-center items-center gap-y-10 md:gap-y-13.75 w-full max-w-5xl">
+        <div className="flex flex-col justify-center items-center gap-y-10 md:gap-y-13.75 w-full max-w-7xl">
 
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl leading-tight xl:whitespace-nowrap text-center">
             {t.landing.title}
           </h1>
 

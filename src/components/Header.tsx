@@ -7,7 +7,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
 
   return (
     <header
-      className={`relative flex lg:justify-items-start justify-between ${bgColor === "black" ? "text-white" : "text-black"} ${bgColor === "black" ? "bg-black" : "bg-white"} py-7.5 max-xs:px-7 xs:max-lg:px-10 px-24 border-b-2 border-b-solid ${bgColor === "black" ? "border-white" : "border-black"} w-full h-30 items-center`}
+      className={`relative flex lg:justify-items-start justify-between ${bgColor === "black" ? "text-white" : "text-black"} ${bgColor === "black" ? "bg-black" : "bg-white"} py-7.5 max-xs:px-7 xs:max-xl:px-10 xl:px-24 border-b-2 border-b-solid ${bgColor === "black" ? "border-white" : "border-black"} w-full h-30 items-center`}
     >
       <div className="flex items-center max-xs:gap-x-4 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20 text-lg">
         <LanguageSelector bgColor={bgColor} />
@@ -25,7 +25,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
               fill={`${bgColor === "black" ? "white" : "black"}`}
             />
           </svg>
-          <span className="max-md:hidden flex">{t.header.ourLocations}</span>
+          <span className="max-md:hidden flex whitespace-nowrap">{t.header.ourLocations}</span>
         </Link>
       </div>
       <Link

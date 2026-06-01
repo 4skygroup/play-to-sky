@@ -7,13 +7,13 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
 
   return (
     <header
-      className={`relative flex lg:justify-items-start justify-between ${bgColor === "black" ? "text-white" : "text-black"} ${bgColor === "black" ? "bg-black" : "bg-white"} py-7.5 max-xs:px-4 xs:max-lg:px-10 px-24 border-b-2 border-b-solid ${bgColor === "black" ? "border-white" : "border-black"} w-full h-30 items-center`}
+      className={`relative flex lg:justify-items-start justify-between ${bgColor === "black" ? "text-white" : "text-black"} ${bgColor === "black" ? "bg-black" : "bg-white"} py-7.5 max-xs:px-7 xs:max-xl:px-10 xl:px-24 border-b-2 border-b-solid ${bgColor === "black" ? "border-white" : "border-black"} w-full h-30 items-center`}
     >
-      <div className="flex items-center max-xs:gap-x-5 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20 text-lg">
+      <div className="flex items-center max-xs:gap-x-4 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20 text-lg">
         <LanguageSelector bgColor={bgColor} />
-        <Link to="/offices-by-region">
+        <Link to="/offices-by-region" className="flex items-center">
           <svg
-            className="max-md:flex hidden"
+            className="max-md:flex hidden max-md:w-3.5 max-md:h-auto"
             width="20"
             height="27"
             viewBox="0 0 20 27"
@@ -25,7 +25,7 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
               fill={`${bgColor === "black" ? "white" : "black"}`}
             />
           </svg>
-          <span className="max-md:hidden flex">{t.header.ourLocations}</span>
+          <span className="max-md:hidden flex whitespace-nowrap">{t.header.ourLocations}</span>
         </Link>
       </div>
       <Link
@@ -42,14 +42,10 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
           alt=""
         />
       </Link>
-      <div className="flex justify-end lg:grow items-center max-xs:gap-x-5 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20">
-        {/* <Link to="/">
-          <span className="">Home</span>
-        </Link> */}
-
-        <Link to="/our-group">
+      <div className="flex justify-end lg:grow items-center max-xs:gap-x-4 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20">
+        <Link to="/our-group" className="flex items-center">
           <svg
-            className="hidden max-md:block"
+            className="hidden max-md:block max-md:w-4 max-md:h-auto"
             width="30"
             height="22"
             viewBox="0 0 30 22"
@@ -83,9 +79,9 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
           </svg>
           <span className="max-md:hidden block">{t.header.aboutUs}</span>
         </Link>
-        <Link to="/contact">
+        <Link to="/contact" className="flex items-center">
           <svg
-            className="hidden max-md:block"
+            className="hidden max-md:block max-md:w-3.5 max-md:h-auto"
             width="20"
             height="20"
             viewBox="0 0 20 20"

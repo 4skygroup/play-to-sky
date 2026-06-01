@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import type { CityType } from "../../types/city";
 import { getTimeZoneHour } from "../../utils/timezone";
+import { useTranslations } from "../../utils/useTranslations";
 
 export default function City({ cityInfo }: { cityInfo: CityType }) {
+  const t = useTranslations();
   const [currentHour, setCurrentHour] = useState(
     getTimeZoneHour("Europe/Paris"),
   );
@@ -45,7 +47,7 @@ export default function City({ cityInfo }: { cityInfo: CityType }) {
       </span>
       <div className="flex  text-white justify-between items-center py-2.5 rounded-sm px-6.25 bg-black border-x-5 border-x-dark-gray border-x-solid w-full">
         <div className="flex flex-col">
-          <span>Agent Local</span>
+          <span>{t.cityPage.agent}</span>
           <span>{cityInfo.localAgent.name}</span>
         </div>
         <span>{cityInfo.localAgent.number}</span>
@@ -53,7 +55,7 @@ export default function City({ cityInfo }: { cityInfo: CityType }) {
       <hr className="h-1 w-[calc(70%)]" />
       <div className="flex gap-x-7.5">
         <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl ">
-          <span className="text-dark-gray">STATUT</span>
+          <span className="text-dark-gray">{t.cityPage.status}</span>
           <span
             className={`flex items-center gap-x-2 before:content-[''] before:w-2 before:h-2 ${cityInfo.status ? "before:bg-green-500" : "before:bg-red-500"} before:rounded-full`}
           >
@@ -61,7 +63,7 @@ export default function City({ cityInfo }: { cityInfo: CityType }) {
           </span>
         </div>
         <div className="flex flex-col gap-y-0.75 items-center font-bold text-xl ">
-          <span className="text-dark-gray">Since</span>
+          <span className="text-dark-gray">{t.cityPage.since}</span>
           <span>{cityInfo.since}</span>
         </div>
       </div>

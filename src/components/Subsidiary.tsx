@@ -30,7 +30,8 @@ export default function Subsidiary({
           <div className="button flex flex-col items-center overflow-hidden">
             <a href={link} target="_blank" rel="noopener noreferrer">
               <button
-                className={`border border-solid font-bold text-base rounded-sm uppercase px-2 py-1.5 w-fit translate-y-full group-hover:translate-y-0 transition-transform duration-300 cursor-pointer ${index === "visuance" ? "border-black" : "border-white"}`}
+                className={`border border-solid font-bold text-base rounded-sm uppercase px-2 py-1.5 w-fit transition-transform duration-300 cursor-pointer md:translate-y-full md:group-hover:translate-y-0 ${index === "visuance" ? "border-black" : "border-white"
+                  }`}
               >
                 {t.buttons.learnMore}
               </button>

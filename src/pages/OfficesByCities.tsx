@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import City from "../components/Offices/City";
+import { useTranslations } from "../utils/useTranslations";
 
 export default function OfficesByCities() {
   // const citiesByRegion = [
@@ -426,14 +427,15 @@ export default function OfficesByCities() {
       expression: "Future & Growth",
     },
   ];
+  const t = useTranslations();
   const region = useParams().region;
   return (
     <div>
       <Header bgColor="white" />
       <div className="flex flex-col items-center py-25 gap-y-25">
         <div className="flex flex-col items-center  max-xs:text-center max-xs:px-10">
-          <h1 className="text-[4rem]">Nos bureaux</h1>
-          <span className="text-xl text-dark-gray">Villes</span>
+          <h1 className="text-[4rem]">{t.officesPage.ourOffices}</h1>
+          <span className="text-xl text-dark-gray">{t.cityPage.title}</span>
         </div>
         <div className="flex flex-wrap gap-12.5 content-center justify-center max-w-312.5">
           {citiesByRegion

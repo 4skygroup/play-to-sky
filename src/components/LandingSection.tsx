@@ -16,9 +16,9 @@ export default function LandingSection() {
             {t.landing.title}
           </h1>
 
-          <button className=" border border-white font-bold text-lg rounded-sm uppercase px-8 py-3 w-fit hover:bg-gray-600 hover:scale-105 transition-all duration-300 cursor-pointer shadow-lg">
+          {/* <button className=" border border-white font-bold text-lg rounded-sm uppercase px-8 py-3 w-fit hover:bg-gray-600 hover:scale-105 transition-all duration-300 cursor-pointer shadow-lg">
             {t.buttons.learnMore}
-          </button>
+          </button> */}
 
           <div className="flex flex-col justify-center items-center gap-y-5 text-lg md:text-2xl text-app-gray mt-4 md:mt-0">
             <span>{t.landing.discover}</span>

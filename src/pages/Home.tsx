@@ -25,7 +25,7 @@ function Home() {
       catchphrase: t.subsidiaries.pulseX,
       className: subsidiariesClassName,
       additionnalClassName: "bg-black text-white",
-      link: "https://www.pulsex.com/",
+      link: "https://www.pulsexagency.com/",
     },
     {
       src: "/images/Pulse X Agency.png",

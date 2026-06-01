@@ -29,9 +29,9 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            sudo mkdir -p /var/www/playtosky
-            sudo chown -R ubuntu:ubuntu /var/www/playtosky
-            sudo rm -rf /var/www/playtosky/*
+            sudo mkdir -p /var/www/playtosky.com
+            sudo chown -R ubuntu:ubuntu /var/www/playtosky.com
+            sudo rm -rf /var/www/playtosky.com/*
 
       - name: 4. Envoyer les fichiers prêts au serveur
         uses: appleboy/scp-action@master
@@ -40,7 +40,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "dist"
-          target: "/var/www/playtosky/"
+          target: "/var/www/playtosky.com/"
           strip_components: 1
 
       - name: 5. Sécuriser les droits pour Nginx
@@ -50,4 +50,4 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            sudo chown -R www-data:www-data /var/www/playtosky/
+            sudo chown -R www-data:www-data /var/www/playtosky.com/

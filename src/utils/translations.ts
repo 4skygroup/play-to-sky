@@ -42,6 +42,7 @@ export const translations = {
     officesPage: {
       ourOffices: "Our offices",
       continents: "Continents and geographic zones",
+      places: "Places",
       europe: "Europe",
       africa: "Africa",
       northAmerica: "North America",
@@ -161,6 +162,16 @@ export const translations = {
       yourMessage: "Votre message",
       tellMore: "Dites-nous en plus sur votre projet...",
       send: "Envoyer",
+    },
+    cityPage: {
+      title: "Nos bureaux",
+      place: "Lieux",
+      hub: "Hub d'innovation",
+      agent: "Représentant local",
+      status: "Statut",
+      statusOff: "Actif",
+      statusOn: "Inactif",
+      since: "Depuis",
     },
     aboutUsPage: {
       title: "Notre Histoire",

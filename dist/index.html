@@ -2,13 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/PLAY.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play To Sky</title>
-    <script type="module" crossorigin src="/assets/index-BIjgvyKY.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Br-xFkaY.css">
+
+    <!-- ── Favicon ──────────────────────────────────────────────────────────── -->
+    <link rel="icon" type="image/svg+xml" href="/images/PLAY.png" />
+
+    <!-- ── PWA Manifest ─────────────────────────────────────────────────────── -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- ── SEO: Title & Description ─────────────────────────────────────────── -->
+    <!-- TODO: replace https://www.playtosky.com with the real production domain -->
+    <title>Play To Sky | Multinational 360° Marketing Group</title>
+    <meta name="description" content="Play To Sky is a multinational 360° marketing group founded in 2025. We scale brands through creativity, innovation and performance — from SEO and media production to brand design and community management." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Play To Sky Group" />
+
+    <!-- ── Canonical ────────────────────────────────────────────────────────── -->
+    <link rel="canonical" href="https://www.playtosky.com/" />
+
+    <!-- ── Hreflang (bilingual EN / FR — same URLs, language via React context) -->
+    <link rel="alternate" hreflang="en"        href="https://www.playtosky.com/" />
+    <link rel="alternate" hreflang="fr"        href="https://www.playtosky.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.playtosky.com/" />
+
+    <!-- ── Open Graph ───────────────────────────────────────────────────────── -->
+    <meta property="og:type"             content="website" />
+    <meta property="og:site_name"        content="Play To Sky Group" />
+    <meta property="og:title"            content="Play To Sky | Multinational 360° Marketing Group" />
+    <meta property="og:description"      content="Play To Sky is a multinational 360° marketing group founded in 2025. We scale brands through creativity, innovation and performance." />
+    <meta property="og:url"              content="https://www.playtosky.com/" />
+    <meta property="og:image"            content="https://www.playtosky.com/images/PLAY.png" />
+    <meta property="og:image:alt"        content="Play To Sky Group Logo" />
+    <meta property="og:image:width"      content="1200" />
+    <meta property="og:image:height"     content="630" />
+    <meta property="og:locale"           content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+
+    <!-- ── Twitter Cards ────────────────────────────────────────────────────── -->
+    <meta name="twitter:card"        content="summary_large_image" />
+    <meta name="twitter:title"       content="Play To Sky | Multinational 360° Marketing Group" />
+    <meta name="twitter:description" content="Play To Sky is a multinational 360° marketing group founded in 2025. We scale brands through creativity, innovation and performance." />
+    <meta name="twitter:image"       content="https://www.playtosky.com/images/PLAY.png" />
+    <meta name="twitter:image:alt"   content="Play To Sky Group Logo" />
+
+    <!-- ── JSON-LD: Organization ────────────────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Play To Sky Group",
+      "url": "https://www.playtosky.com",
+      "logo": "https://www.playtosky.com/images/PLAY.png",
+      "foundingDate": "2025",
+      "founder": [
+        { "@type": "Person", "name": "Robbin-James AGOH" },
+        { "@type": "Person", "name": "Thierno DIALLO" }
+      ],
+      "description": "Multinational 360° marketing group scaling brands through creativity, innovation, and performance.",
+      "areaServed": ["Europe", "Africa", "North America", "Middle East"],
+      "sameAs": [
+        "https://www.linkedin.com/company/play-to-sky/",
+        "https://www.instagram.com/playtosky/",
+        "https://www.tiktok.com/playtosky/",
+        "https://www.behance.net/playtosky"
+      ]
+    }
+    </script>
+
+    <!-- ── JSON-LD: WebSite ──────────────────────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Play To Sky",
+      "url": "https://www.playtosky.com",
+      "inLanguage": ["en", "fr"]
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-CXtxtrYI.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B8wYlnaq.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>

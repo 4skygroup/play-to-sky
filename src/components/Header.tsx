@@ -39,7 +39,8 @@ export default function Header({ bgColor }: { bgColor: "black" | "white" }) {
               ? "/images/Play To Sky Logo Black.png"
               : "/images/Play To Sky Logo White.png"
           }
-          alt=""
+          alt="Play To Sky"
+          loading="eager"
         />
       </Link>
       <div className="flex justify-end lg:grow items-center max-xs:gap-x-4 xs:max-sm:gap-x-10 sm:max-lg:gap-x-10 lg:gap-x-20">

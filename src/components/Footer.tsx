@@ -41,7 +41,7 @@ export default function Footer() {
   return (
     <footer className="max-md:flex-col max-md:items-center max-md:gap-y-15 flex justify-between items-start bg-footer-bg w-full h-fit max-lg:px-10 lg:max-xl:px-15 px-40 py-12.5 border-t-2 border-t-solid border-t-white">
       <div className="flex flex-col gap-y-10 justify-end items-center w-fit h-full my-auto">
-        <img src="/images/Play To Sky Logo Blue.png" alt="Play To Sky Blue" />
+        <img src="/images/Play To Sky Logo Blue.png" alt="Play To Sky Group" loading="lazy" />
         <p className="text-app-gray underline text-base max-lg:w-40 w-67.5 text-center">
           {t.footer.followJourney}
         </p>

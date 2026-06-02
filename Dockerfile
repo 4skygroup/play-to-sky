@@ -1,32 +1,24 @@
-# --- ÉTAPE 1 : BUILD ---
+# ── ÉTAPE 1 : BUILD ──────────────────────────────────────────────────────────
 FROM node:20-slim AS builder
 WORKDIR /app
 
-# ✅ On copie d'abord les fichiers de configuration
 COPY package*.json ./
-# ✅ Maintenant on peut installer
 RUN npm install
-# RUN npm install --omit=dev
 
-#  Ensuite on copie le reste du code
 COPY . .
+RUN npm run build
 
-# --- ÉTAPE 2 : PRODUCTION ---
-# Utilise node:22-alpine comme sur ta capture si tu veux, 
-# mais attention aux failles détectées par Trivy !
-FROM node:22-alpine 
+# ── ÉTAPE 2 : PRODUCTION (nginx + gzip) ──────────────────────────────────────
+FROM nginx:alpine
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-WORKDIR /app
 
-COPY --from=builder /app .
-RUN chown -R appuser:appgroup /app
+# Copie le build statique et la config nginx
+COPY --from=builder /app/dist /usr/share/nginx/html
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-USER appuser
-EXPOSE 3000
+RUN chown -R appuser:appgroup /usr/share/nginx/html
 
-# Le HEALTHCHECK est une excellente idée (vue sur ton image)
-# HEALTHCHECK --interval=30s --timeout=3s \
-#   CMD wget --quiet --tries=1 --spider http://localhost:3000/health || exit 1
+EXPOSE 80
 
-CMD ["npm", "run", "dev"]
+CMD ["nginx", "-g", "daemon off;"]

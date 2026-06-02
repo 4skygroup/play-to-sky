@@ -1,0 +1,26 @@
+{
+  "name": "Play To Sky Group",
+  "short_name": "Play To Sky",
+  "description": "Multinational 360° marketing group scaling brands through creativity, innovation and performance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/images/Play To Sky Logo Blue.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/Play To Sky Logo Blue.png",
+      "sizes": "any",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}

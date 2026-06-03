@@ -2,9 +2,20 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Region from "../components/Offices/Region";
 import { useTranslations } from "../utils/useTranslations";
+import { useSeo } from "../utils/useSeo";
 
 export default function OfficesByRegion() {
   const t = useTranslations();
+  useSeo({
+    title: "Our Offices | Play To Sky",
+    description:
+      "Discover Play To Sky Group offices around the world — Europe, Africa, North America, and the Middle East.",
+    canonical: "https://www.playtosky.com/offices-by-region",
+    breadcrumbs: [
+      { name: "Home", url: "https://www.playtosky.com/" },
+      { name: "Our Offices", url: "https://www.playtosky.com/offices-by-region" },
+    ],
+  });
 
   const regions = [
     {

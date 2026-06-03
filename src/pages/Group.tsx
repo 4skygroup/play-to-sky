@@ -1,10 +1,20 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { useTranslations } from "../utils/useTranslations";
-
+import { useSeo } from "../utils/useSeo";
 
 export default function Group() {
   const t = useTranslations();
+  useSeo({
+    title: "Our Group | Play To Sky",
+    description:
+      "Learn about Play To Sky Group, a multinational 360° marketing group founded in 2025, scaling brands through creativity, innovation, and performance across Europe, Africa, North America, and the Middle East.",
+    canonical: "https://www.playtosky.com/our-group",
+    breadcrumbs: [
+      { name: "Home", url: "https://www.playtosky.com/" },
+      { name: "Our Group", url: "https://www.playtosky.com/our-group" },
+    ],
+  });
 
   return (
     <div>

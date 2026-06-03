@@ -3,9 +3,20 @@ import Header from "../components/Header";
 import Input from "../components/inputs/input";
 import Textarea from "../components/inputs/textarea";
 import { useTranslations } from "../utils/useTranslations";
+import { useSeo } from "../utils/useSeo";
 
 export default function Contact() {
   const t = useTranslations();
+  useSeo({
+    title: "Contact Us | Play To Sky",
+    description:
+      "Get in touch with Play To Sky Group. Contact our team for partnerships, marketing projects, and brand scaling opportunities.",
+    canonical: "https://www.playtosky.com/contact",
+    breadcrumbs: [
+      { name: "Home", url: "https://www.playtosky.com/" },
+      { name: "Contact", url: "https://www.playtosky.com/contact" },
+    ],
+  });
 
   return (
     <div>

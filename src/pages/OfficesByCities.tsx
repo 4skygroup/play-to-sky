@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import City from "../components/Offices/City";
 import { useTranslations } from "../utils/useTranslations";
+import { useSeo } from "../utils/useSeo";
 
 export default function OfficesByCities() {
   // const citiesByRegion = [
@@ -429,6 +430,17 @@ export default function OfficesByCities() {
   ];
   const t = useTranslations();
   const region = useParams().region;
+  useSeo({
+    title: "Offices by City | Play To Sky",
+    description:
+      "Find Play To Sky Group offices by city — Paris, London, New York, Dubai, and more across Europe, Africa, North America, and the Middle East.",
+    canonical: "https://www.playtosky.com/offices-by-cities",
+    breadcrumbs: [
+      { name: "Home", url: "https://www.playtosky.com/" },
+      { name: "Our Offices", url: "https://www.playtosky.com/offices-by-region" },
+      { name: "Offices by City", url: "https://www.playtosky.com/offices-by-cities" },
+    ],
+  });
   return (
     <div>
       <Header bgColor="white" />

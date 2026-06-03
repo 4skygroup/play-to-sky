@@ -4,9 +4,16 @@ import Subsidiary from "../components/Subsidiary";
 import type { SubsidiaryType } from "../types/subsidiary";
 import Footer from "../components/Footer";
 import { useTranslations } from "../utils/useTranslations";
+import { useSeo } from "../utils/useSeo";
 
 function Home() {
   const t = useTranslations();
+  useSeo({
+    title: "Play To Sky | Multinational 360° Marketing Group",
+    description:
+      "Play To Sky is a multinational marketing group founded in 2025. We scale brands through creativity, innovation and performance — from SEO and media production to brand design and community management.",
+    canonical: "https://www.playtosky.com/",
+  });
   const subsidiariesClassName: string =
     "flex w-full justify-center p-28.75 h-screen items-center";
   const subsidiaries: SubsidiaryType[] = [
